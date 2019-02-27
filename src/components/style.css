@@ -1,0 +1,53 @@
+.Page{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.header{
+    display:flex;
+    background: black;
+}
+
+.headerLink{
+    font-size: 30px;
+    margin:20px;
+    color: orange;
+    border-bottom: transparent;
+}
+
+.headerLink:hover{
+    color:red;
+}
+
+.Post{
+    margin: 15px;
+    display:grid;
+    grid-template-columns: 2fr 2fr 5fr;
+    border: 2px solid black;
+}
+.myImage{
+    width:200px;
+    height:300px;
+}
+
+.FavoriteForm{
+    border:2px solid black;
+    margin:15px;
+}
+
+.filterForm{
+    margin-top: 5px;
+    margin-left:10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.filterInput{
+    width:200px;
+    height:30px;
+}
+
+.naslov{
+    font-size: 30px;
+    font-weight: bold;
+}
