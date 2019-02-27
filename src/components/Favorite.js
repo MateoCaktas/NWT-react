@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import PostsData from "../posts/data.json";
-
+import { NavLink} from "react-router-dom";
 class Favorite extends Component{
     constructor(props){
         super(props);
@@ -15,12 +15,14 @@ class Favorite extends Component{
                 <div className="FavoriteForm">
                 <h2>My Favorites</h2>
                 {favoriti.map((MyPost) => {
-                    return(
+                    return(<div>
+                        <NavLink to={`/post/${MyPost.id}`} className="naslov">{MyPost.title}</NavLink>
                         <div key={MyPost.id}>
-                        <div>{MyPost.title}</div>
+                        
                         <img className="myImage"
                          src={require("../posts/" + MyPost.image)}
                          alt={MyPost.title}/>
+                        </div>
                         </div>
                     );
                 })}

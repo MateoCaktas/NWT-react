@@ -32,9 +32,6 @@ class DisplayPosts extends Component {
    console.log(this.state);
   }
 
-  componentDidUpdate = (event) => {
-    this.favoriteList = PostsData.filter(Favorites => Favorites.isFavorite === true);
-  };
 
   render() {
     function ChangeFavorite(ThePost){

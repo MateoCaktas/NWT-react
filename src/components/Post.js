@@ -31,7 +31,7 @@ class Post extends Component {
                     <p>Rating:{this.props.mojProp.rating}</p>
                     <p>Favorit:{this.props.mojProp.isFavorite ? 'Favorite' : 'Not favorite'}</p>
                     <button onClick={() => this.props.MinjajFavorite(this.props.mojProp.id)}>Make favorite</button>
-                    <p>{this.props.JeLiFavorite ? "Je" : "Nije"}</p>
+                  
                 </div>
 
             </div>
